@@ -1,3 +1,62 @@
-body {
-    
+:root {
+    --white-color: #f8f8f8;
+    --grey-color:  #707070;
+    --blue-color:  #1792D2;
+    --navy-blue-color:  #143774;
 }
+
+body {
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/**************Typography******************/
+
+header {
+    background-color: var(--white-color);
+    padding: 2em 0;
+    text-align: center;
+}
+
+.title {
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--navy-blue-color);
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: var(--blue-color);
+    font-size: 0.75rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+/*Nav List*/
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.list-item {
+    color: var(--grey-color);
+    text-transform: capitalize;
+    margin: 0 1em; /*margins dont overlap in flexbox items! Justify-content: space between, gave too much of a gap between list items so I used margin*/
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--grey-color);
+    font-weight: 700;
+}
+
+.nav-link:focus, 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
